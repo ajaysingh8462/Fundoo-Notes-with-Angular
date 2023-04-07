@@ -1,0 +1,2 @@
+<app-createnote class="notes" (msgCreateToGetall)="receiveMsgCtrateToDisplay($event)"></app-createnote>
+<app-displaynotes class="display" [child]="notesArray" (msgDisplayToGetAllNotes)=" receiveMsgFromDisplay($event)"></app-displaynotes>

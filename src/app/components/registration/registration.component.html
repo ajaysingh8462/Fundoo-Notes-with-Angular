@@ -1,0 +1,85 @@
+<div class="container">
+    <div class="inner-container">
+        <div class="form">
+            <form class="inner-form" [formGroup]="registerForm">
+                <div class="fundoo"><span style="color:#44289e">F</span>
+                    <span style="color:#9d2828">u</span>
+                    <span style="color:#dede23">n</span>
+                    <span style="color:#44289e">d</span>
+                    <span style="color:#13702b">o</span>
+                    <span style="color:#FF0066">o</span>
+                </div>
+                <div class="Create">Create your Fundoo Account</div>
+                <div class="F-L-name">
+                    <p>
+                        <mat-form-field class="mat"  appearance="outline">
+                            <mat-label>FirstName</mat-label>
+                            <input class="input-box" matInput placeholder="" formControlName="firstName"/>
+                            <mat-error>Firstname is required</mat-error>
+                        </mat-form-field>
+                    </p>
+                    <p class="lastName">
+                        <mat-form-field class="mat" appearance="outline">
+                            <mat-label >LastName</mat-label>
+                            <input class="input-box lastName" matInput placeholder="" formControlName="lastName"/>
+                            <mat-error>lastname is required</mat-error>
+                        </mat-form-field>
+                    </p>
+
+                </div>
+                <div class="Email">
+                    <p style="margin-left: 10px;">
+                        <mat-form-field class="mat-email mat" appearance="outline">
+                            <mat-label>UserName</mat-label>
+                            <input type="email" class="input-box" matInput placeholder="" formControlName="email"/>
+                            <mat-hint class="text">You can use letters, numbers &amp; period</mat-hint>
+                            <mat-error>email is required</mat-error>
+                        </mat-form-field>
+                </div>
+                <div class=" span">
+                    <span >Use my current email address instead</span>
+                
+            </div>
+                <div class="password">
+                    <p>
+                        <mat-form-field class="mat"  appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input type="password" class="input-box" matInput placeholder="" formControlName="password"/>
+                            <mat-error>password is required</mat-error>
+
+                        </mat-form-field>
+                    </p  >
+                    <p class="confirmPassword">
+                        <mat-form-field class="mat" appearance="outline">
+                            <mat-label>ConfirmPassword</mat-label>
+                            <input type="password" class="input-box confirmPassword" matInput placeholder=""
+                                formControlName="confirmPassword"/>
+                                <mat-error>confirmPassword is required</mat-error>
+                        </mat-form-field>
+
+                    </p>
+                </div>
+                <div class="spantag">
+                    <span>
+                        Use 8 or more characters with a mix of letters, numbers & symbols
+                    </span>
+                </div>
+                <div class="checkbox"> <input type="checkbox" class="show" id="show-password">
+                    <label class="Lableshow" for="vehicle1">Show password</label>
+                </div>
+                <div class="register">
+                    <button class="link" routerLink="/login">Sign in instead</button>
+                    <button class="Next-Butoon" id="next" (click)="onSubmit()">Next</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="imgage">
+            <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg" alt="">
+            <div class="img-text">
+                <p class="img-texts">One account. For all youe Fundoo notes.</p>
+            </div>
+        </div>
+
+    </div>-
+</div>

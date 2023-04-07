@@ -1,0 +1,172 @@
+<div class="lks" *ngIf="istrash===false && isarchive===false">
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                add_alert
+            </span>
+            <span class="piking ">Remaind me</span>
+        </BUtton>
+    </div>
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                person_add
+            </span>
+            <span class="piking ">Collaborator</span>
+        </BUtton>
+    </div>
+
+    <button class="grid" mat-button [matMenuTriggerFor]="belowMenu"><span class="material-symbols-outlined">
+            palette
+        </span></button>
+    <mat-menu style="background: floralwhite;" class="manu-color" #belowMenu="matMenu" yPosition="below">
+        <div *ngFor="let color of colors">
+            <button class="grid border-color" mat-menu-item [style.background]="color?.name "
+                (click)="setColor(color.name)"></button>
+        </div>
+    </mat-menu>
+
+    <!-- <div>
+        <div class="pop" *ngFor="let color of colors">
+            <BUtton class="grid open" [style.background]="color?.name" (click)="setColor(color.name)">
+                <span class="material-symbols-outlined">
+                    palette
+                </span>
+                <span class="piking ">Color</span>
+            </BUtton>
+        </div>
+    </div> -->
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                photo
+            </span>
+            <span class="piking ">Image</span>
+        </BUtton>
+    </div>
+    <div>
+        <BUtton (click)="Submit()" class="grid">
+            <span class="material-symbols-outlined">
+                archive
+            </span>
+            <span class="piking ">Archive</span>
+        </BUtton>
+    </div>
+    <div>
+        <button style="color: rgb(57 55 55); " class="grid" mat-icon-button [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu class="manu-mat" #menu="matMenu">
+            <button (click)="onSubmit()" class="grid" mat-menu-item>
+                <span>Delete note</span>
+            </button>
+            <!-- <button class="grid" mat-menu-item>
+                <span>Add label</span>
+            </button> -->
+            <!-- <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+            <mat-menu #afterMenu="matMenu" xPosition="after">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu> -->
+            <button class="grid" mat-menu-item>
+                <span>Add drawing</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Make a copy</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Show checkbox</span>
+            </button>
+        </mat-menu>
+    </div>
+</div>
+
+<div class=" trash" *ngIf="istrash">
+
+    <div>
+        <BUtton class="grid" (click)="deleteforever()">
+            <span class="material-symbols-outlined">
+                delete
+            </span>
+            <span class="piking ">delete forever</span>
+        </BUtton>
+    </div>
+    <div>
+        <BUtton class="grid" (click)="restore()">
+            <span class="material-symbols-outlined">
+                restore_from_trash
+            </span>
+            <span class="piking ">restore</span>
+        </BUtton>
+    </div>
+</div>
+<div class="lks" *ngIf="isarchive">
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                add_alert
+            </span>
+            <span class="piking ">Remaind me</span>
+        </BUtton>
+    </div>
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                person_add
+            </span>
+            <span class="piking ">Collaborator</span>
+        </BUtton>
+    </div>
+    <div>
+        <button class="grid" mat-button [matMenuTriggerFor]="belowMenu"><span class="material-symbols-outlined">
+                palette
+            </span></button>
+        <mat-menu style="background: floralwhite;" class="manu-color" #belowMenu="matMenu" yPosition="below">
+            <div *ngFor="let color of colors">
+                <button class="grid border-color" mat-menu-item [style.background]="color?.name "
+                    (click)="setColor(color.name)"></button>
+            </div>
+        </mat-menu>
+
+    </div>
+    <div>
+        <BUtton class="grid">
+            <span class="material-symbols-outlined">
+                photo
+            </span>
+            <span class="piking ">Image</span>
+        </BUtton>
+    </div>
+    <div>
+        <BUtton (click)="unarchive()" class="grid">
+            <span class="material-symbols-outlined">
+                unarchive
+            </span>
+            <span class="piking  ">Unarchive</span>
+        </BUtton>
+    </div>
+    <div>
+        <button style="color: rgb(125, 123, 123);" class="grid" mat-icon-button [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu class="manu-mat" #menu="matMenu">
+            <button (click)="onSubmit()" class="grid" mat-menu-item>
+                <span>Delete note</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Add label</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Add drawing</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Make a copy</span>
+            </button>
+            <button class="grid" mat-menu-item>
+                <span>Show checkbox</span>
+            </button>
+        </mat-menu>
+    </div>
+</div>

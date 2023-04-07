@@ -1,0 +1,123 @@
+.page {
+    // width: auto;
+    // height: auto;
+    border: 1px solid rgb(224, 223, 221);
+    border-radius: 10px;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // align-content: center;
+
+}
+
+.page:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.block {
+    width: 200px;
+    height: auto;
+    
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.co-pg-dt {
+
+    // padding: 1%;
+    // padding-left: 0px;
+    // justify-content: space-evenly;
+
+    padding-left: 12px;
+    padding-top: 12px;
+    word-wrap: break-word;
+}
+
+.main-co {
+    margin-top: 50px;
+    margin-left: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+    height: auto;
+    align-content: space-between;   
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.co-pg-dt {
+    width: 240px;
+    height: auto
+}
+
+.tx-ti-bl {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+
+
+}
+
+.ic-all {
+
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108%;
+    height: 35px;
+    background: transparent;
+
+
+}
+
+.page:hover .ic-all {
+    visibility: visible;
+
+
+}
+
+// // .mat-typography p {
+
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// // }
+
+.tx-ds-bl,
+.tx-ti-bl {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 450px) {
+.main-co{
+    margin-top: 50px;
+    margin-left: 92px;
+    width: 72%;
+}
+.co-pg-dt{
+    width: 100%;
+    height: auto;
+}
+.page{
+
+    width: 105%;
+}
+.block{
+    width: 298px;
+}
+.block-new{
+    width: 270px;
+}
+.ic-all{
+    margin-left: 0%;
+}
+}
+
+

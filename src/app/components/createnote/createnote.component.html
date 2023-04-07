@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="small-co">
+
+        <mat-accordion >
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <input class="in-ta-no" type="text" placeholder="Title" [(ngModel)]="title">
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <input class="in-ta-dis" type="text" placeholder="Take a note..." [(ngModel)]="description">
+                <div class="ic-bu">
+                    <!-- <div class="ic-all">
+                        <app-icons></app-icons>
+                    </div> -->
+                     <div class="lks">
+                        <div>
+                            <BUtton class="grid">
+                                <span class="material-symbols-outlined">
+                                    add_alert
+                                </span>
+                                <span class="piking ">Remaind me</span>
+                            </BUtton>
+                        </div>
+                        <div>
+                            <BUtton class="grid">
+                                <span class="material-symbols-outlined">
+                                    person_add
+                                </span>
+                                <span class="piking ">Collaborator</span>
+                            </BUtton>
+                        </div>
+
+                        <button class="grid" style="width: 40%;"  mat-button [matMenuTriggerFor]="belowMenu"><span class="material-symbols-outlined">
+                            palette
+                        </span></button>
+                    <mat-menu style="background: floralwhite;" class="manu-color" #belowMenu="matMenu" yPosition="below">
+                        <div *ngFor="let color of colorData">
+                            <button class="grid border-color" mat-menu-item [style.background]="color.name"></button>
+                        </div>
+                    </mat-menu>
+
+                        <!-- <div>
+                        <div class="pop" *ngFor="let color of colors">
+                            <BUtton class="grid open" [style.background]="color?.name" (click)="setColor(color.name)">
+                                <span class="material-symbols-outlined">
+                                    palette
+                                </span>
+                                <span class="piking ">Color</span>
+                            </BUtton>
+                        </div>
+                    </div> -->
+                        <div>
+                            <BUtton class="grid">
+                                <span class="material-symbols-outlined">
+                                    photo
+                                </span>
+                                <span class="piking ">Image</span>
+                            </BUtton>
+                        </div>
+                        <div>
+                            <button style="color: rgb(125, 123, 123);" class="grid" mat-icon-button
+                                [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu style="width: 25%;" class="manu-mat" #menu="matMenu">
+                                <button class="grid" mat-menu-item>
+                                    <span>Add label</span>
+                                </button>
+                                <button class="grid" mat-menu-item>
+                                    <span>Add drawing</span>
+                                </button>
+                                <button class="grid" mat-menu-item>
+                                    <span>Show checkbox</span>
+                                </button>
+                            </mat-menu>
+                        </div>
+                    </div>
+                    <button hideToggle (closed)="panelOpenState = false" class="Bu-cl" (click)="onSubmit()">Close</button>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" >
+            </mat-expansion-panel>
+
+        </mat-accordion>
+
+
+    </div>
+
+</div>

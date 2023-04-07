@@ -1,0 +1,53 @@
+<div class="page">
+    <div class="container">
+        <div class="form">
+            <form [formGroup]="login">
+            <div class="fundoo"><span style="color:#44289e">F</span>
+                <span style="color:#9d2828">u</span>
+                <span style="color:#dede23">n</span>
+                <span style="color:#44289e">d</span>
+                <span style="color:#13702b">o</span>
+                <span style="color:#FF0066">o</span>
+            </div>
+            <div class="signin">
+                <p>Sign in</p>
+            </div>
+            <div class="Text">
+                <p>Use your Fundoo Account</p>
+            </div>
+            <div class="box email">
+                <p>
+                    <mat-form-field class="mat-box"  appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input style="height: 20px;"  matInput placeholder="" formControlName="email">
+                        <mat-error>email is required</mat-error>
+
+                    </mat-form-field>
+                    <button class="link" routerLink="/forgetpassword">Forget email?</button>
+                </p>
+            </div>
+            <div class="box password">
+                <p>
+                    <mat-form-field class="mat-box mat-box-pass" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" matInput placeholder=""formControlName="password">
+                        <mat-error>password is required</mat-error>
+
+                    </mat-form-field>
+                </p>
+            </div>
+            <div class="text-new">
+                Not your computer? Use Guest mode to sign in privately.<span class="link NEW"> Learn more</span>
+            </div>
+            <div class="register">              
+                <button class="link link-cre" routerLink="/register">Create Account</button>
+                <button class="Next-Butoon" id="next"(click)="onSubmit()" >Next</button>
+            </div>
+            </form>
+
+            
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+<div class="page">
+    <div>
+        <header class="header">
+            <!-- <div class="cl-mu icon tooltip"> -->
+            <div class="example-container " [class.example-is-mobile]="mobileQuery.matches">
+                <mat-toolbar color="primary" class="example-toolbar">
+                    <button class="bt-mu" mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+                </mat-toolbar><br>
+                <mat-sidenav-container class="example-sidenav-container"
+                    [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+                    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                        [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+                        <mat-nav-list >
+                            <div  class="all-side-nav">
+                                <!-- *ngFor="let nav of fillerNav">{{nav}} -->
+                                <div class="ic-ig-sv">
+                                    <div class="div-edit" style mat-list-item routerLink="/dashboard/notes">
+                                        <img  (click)="snav.toggle()" class="icon-sv" src="assets/note.svg" alt="">
+                                        <span class="sp-tx">Notes</span>
+                                    </div>
+                                </div>
+                                <div class="ic-ig-sv">
+                                    <div class="div-edit" style="margin-left:15px;" mat-list-item
+                                        routerLink="/dashboard/notes">
+                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/reminder.svg" alt="">
+                                        <span class="sp-tx">Reminder</span>
+                                    </div>
+                                </div>
+                                <!-- <div class="ic-ig-sv">
+                                    <a style mat-list-item routerLink="/dashboard/notes">
+                                        <img class="icon-sv" src="assets/label.svg" alt="">
+                                        <span class="sp-tx">My</span>
+                                    </a>
+                                </div>
+                                <div class="ic-ig-sv">
+                                    <a style mat-list-item routerLink="/dashboard/notes">
+                                        <img class="icon-sv" src="assets/label.svg" alt="">
+                                        <span class="sp-tx">New</span>
+                                    </a>
+                                </div> -->
+                                <div class="ic-ig-sv">
+                                    <div class="div-edit" style="margin-left:15px;" mat-list-item
+                                        routerLink="/dashboard/notes">
+                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/edit-label.svg" alt="">
+                                        <span class="sp-tx">Edit lable</span>
+                                    </div>
+                                </div>
+                                <div class="ic-ig-sv">
+                                    <div class="div-edit" style mat-list-item routerLink="/dashboard/archive">
+                                        <img (click)="snav.toggle()" class="icon-sv" src="assets/archive.svg" alt="">
+                                        <span class="sp-tx">Archive</span>
+                                    </div>
+                                </div>
+                                <div class="ic-ig-sv">
+                                    <div class="div-edit" style="margin-left:-4px;" mat-list-item
+                                        routerLink="/dashboard/trash">
+                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/trash.svg" alt="">
+                                        <span class="sp-tx">Trash</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-nav-list>
+                    </mat-sidenav>
+                </mat-sidenav-container>
+            </div>
+            <!-- </div> -->
+            <div class="manu ">
+                <button class=" fun-button" routerLink="/dashboard">
+                    <img class="fundoo" src="assets/fundoo.png" alt="">
+                    <span class="fun">Fundoo</span>
+                </button>
+            </div>
+            <div class="container" >
+                <BUtton class="search picker">
+                    <mat-icon class="size" aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>
+                    <span class="piking ">Search</span>
+                </BUtton>
+                <input class="boder" type="search" placeholder="search" (keyup)="getSearchNotes($event)">
+            </div>
+            <div class="specer">
+                <BUtton class="refresh picker">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="refresh"></mat-icon>
+                    <span class="piking ">Refresh</span>
+                </BUtton>
+            </div>
+            <div>
+                <BUtton class="settings picker">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings"></mat-icon>
+                    <span class="piking ">Settings</span>
+                </BUtton>
+            </div>
+            <div>
+                <BUtton class="grid">
+                    <img class="grids" src="assets/grid.png" alt="">
+                    <span class="piking ">Google apps</span>
+                </BUtton>
+            </div>
+            <div class="account" >
+                <button class="person picker" mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person"></mat-icon>
+                    <span class="piking ">Fundoo account</span>
+                </button>
+                <mat-menu  #menu="matMenu">
+                    <button class="logout" (click)="logout()" mat-menu-item>Logout</button>
+                </mat-menu>
+            </div>
+            
+
+        </header>
+        <div class="container-note"><router-outlet ></router-outlet></div>
+    </div>
+</div>

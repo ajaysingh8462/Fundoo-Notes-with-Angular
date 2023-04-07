@@ -1,0 +1,891 @@
+
+.container {
+    border: solid 1px brown;
+   height: 99.8vh;
+   width: 99.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-container {
+    border: solid 1px rgb(191, 195, 191);
+    height: 82%;
+    width: 48%;
+    border-radius: 1%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.form {
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoo {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.Create {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+
+    font-family:sans-serif;
+}
+
+.F-L-name {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+   
+
+}
+.lastName{
+    margin-left: 10px;
+}
+input.input-box{
+    height: -10px
+}
+.Email {
+    padding: 0px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0px;
+
+
+}
+.mat-email{
+    width: 100%;
+}
+
+.span{
+    margin-left: 25px;
+    max-width: 218%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1a73e8;
+    
+    
+}
+.span:hover{
+    
+    background-color: #f2f7fe;
+   
+}
+
+
+.text {
+    font-size: 9px;
+    width: 110%;
+}
+
+.password {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    
+    align-items: center;
+}
+.confirmPassword{
+    margin-left: 10px;
+}
+
+.checkbox {
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+
+input.show {
+
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    
+
+}
+label.Lableshow{
+    margin-left: 22px;
+    vertical-align: super;
+
+
+}
+.imgage{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    margin-top: 115px;
+    margin-left: 20px;
+
+
+}
+.spantag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:12px ;
+
+    margin-top: -34px;
+    margin-left: -35px;
+    margin-bottom: 10px;
+}
+
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    
+
+}
+.Next-Butoon{
+    color: white;
+    border: 0;
+    background-color: #1a73e8;
+    font-weight: 650;
+    border-radius: 10%;
+    height: 35px;
+    width: 17%;
+}
+.img-text{
+   
+}
+.img-texts{
+    margin-left: 5%;
+    font-size: 13px;
+    text-align: center;
+}
+.link{
+    color: #1a73e8;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 0;
+    height: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.link:hover{
+    background-color: #f2f7fe;
+}
+@media only screen and (max-width: 450px) {
+    
+    
+.container {
+    border: 0;
+    height: 118%;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-container {
+    border: 0;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.imgage{
+     
+    display: none
+    
+}
+.img-texts{
+    font-size: 0;
+    
+}
+.form {
+
+    width: 50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundoo {
+    display: flex;
+    
+    margin-top: 20px;
+    font-size: 10;
+    font-weight: 400;
+}
+.Create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
+    width: 273%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: revert;
+}
+.inner-form{
+    height: inherit;
+    width: 100px;
+}
+.F-L-name {
+    margin-left: -80px;
+    margin-top: 20px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.lastName{
+    margin-left: 0;
+}
+input.input-box{
+    height: 4px
+}
+.Email {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    
+    padding: 0px;
+
+
+}
+.mat{
+    width:180%;
+    margin-left: -30px;
+    
+}
+.mat-email{
+    width: 365%;
+margin-left: -120px;
+}
+.text{
+    font-size: 12px;
+    margin-left: -10px;
+}
+.password {
+    margin-left: -80px;
+    margin-top: 20px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirmPassword{
+    margin-left: -0px;
+}
+.checkbox {
+    margin-left: -100px;
+    
+}
+
+input.show {
+
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    
+
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: -137px;
+    width: 300%
+
+}
+.Next-Butoon{
+    color: white;
+    border: 0;
+    background-color: #1a73e8;  
+    font-weight: 650;
+    border-radius: 10%;
+   
+    width: 140px;
+    margin-left: 200px;
+}
+.span{
+    display: flex;
+    width: max-content;
+    margin-left: -90px;
+}
+.span:hover{
+    
+    background-color: #f2f7fe;
+   
+}
+.spantag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: -31px;
+    margin-left: -92px;
+    margin-bottom: 10px;
+    width: 202px;
+}
+.link{
+    color: #1a73e8;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 0;
+    height: 30px;
+    font-weight: 600;
+    width: 120px;
+    margin-left: 30px;
+}
+.link:hover{
+    background-color: #f2f7fe;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 450px)  {
+    .container {
+    border: 0;
+    height: 118%;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-container {
+    border: 0;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.imgage{
+     
+   display: none;
+    
+}
+.img-texts{
+    font-size: 0;
+    
+}
+.form {
+
+    width: 50%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundoo {
+    margin-left: -80px;
+    margin-top: 20px;
+    font-size: 10;
+    font-weight: 400;
+}
+.Create {
+    margin-left: -80px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: revert;
+}
+.inner-form{
+    height: inherit;
+    width: 100px;
+}
+.F-L-name {
+    margin-left: -80px;
+    margin-top: 20px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.lastName{
+    margin-left: 0;
+}
+input.input-box{
+    height: 4px
+}
+.Email {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    
+    padding: 0px;
+
+
+}
+.mat{
+    width: 130%;
+    
+}
+.mat-email{
+    width: 300%;
+margin-left: -105px;
+}
+   
+.password {
+    margin-left: -80px;
+    margin-top: 20px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirmPassword{
+    margin-left: -0px;
+}
+.checkbox {
+    margin-left: -100px;
+    
+}
+
+input.show {
+
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    
+
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: -137px;
+    width: 300%
+
+}
+.Next-Butoon{
+    color: white;
+    border: 0;
+    background-color: #1a73e8;  
+    font-weight: 650;
+    border-radius: 10%;
+   
+    width: 140px;
+    margin-left: 200px;
+}
+.span{
+    display: flex;
+    width: max-content;
+    margin-left: -90px;
+}
+.span:hover{
+    
+    background-color: #f2f7fe;
+   
+}
+.spantag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin-top: -31px;
+    margin-left: -92px;
+    margin-bottom: 10px;
+    width: 202px;
+}
+.link{
+    color: #1a73e8;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 0;
+    height: 30px;
+    font-weight: 600;
+    width: 120px;
+    margin-left: 30px;
+}
+.link:hover{
+    background-color: #f2f7fe;
+  }
+
+}
+@media only screen and (max-width: 900px) and (min-width: 600px){
+    .container {
+        border: solid 1px rgb(248, 248, 248);
+       height: 99.8vh;
+       width: 99.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .inner-container {
+        border: solid 1px rgb(187, 194, 187);
+        height: 52%;
+        width: 78%;
+        border-radius: 1%;
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+    
+    .form {
+    
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -20px;
+    }
+    
+    .fundoo {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'Roboto';
+    }
+    
+    .Create {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: lighter;
+    
+        font-family:sans-serif;
+    }
+    
+    .F-L-name {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        
+       
+    
+    }
+    .lastName{
+        margin-left: 10px;
+    }
+    input.input-box{
+        height: 5px
+    }
+    .Email {
+        padding: 0px;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0px;
+    
+    
+    }
+    .mat-email{
+        width: 100%;
+    }
+    
+    .span{
+        margin-left: 25px;
+        max-width: 218%;
+        height: 30px;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        color: #1a73e8;
+        
+        
+    }
+    .span:hover{
+        
+        background-color: #f2f7fe;
+       
+    }
+    
+    
+    .text {
+        font-size: 13px;
+        width: 110%;
+    }
+    
+    .password {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        
+        align-items: center;
+    }
+    .confirmPassword{
+        margin-left: 10px;
+    }
+    
+    .checkbox {
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+    
+    input.show {
+    
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        
+    
+    }
+    label.Lableshow{
+        margin-left: 22px;
+        vertical-align: super;
+    
+    
+    }
+    .imgage{
+        display: none;
+    
+    }
+    .spantag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:12px ;
+    
+        margin-top: -34px;
+        margin-left: -35px;
+        margin-bottom: 10px;
+    }
+    
+    .register{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        
+    
+    }
+    .Next-Butoon{
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        border-radius: 10%;
+        height: 35px;
+        width: 17%;
+    }
+    
+    .img-texts{
+        display: none;
+    }
+    .link{
+        color: #1a73e8;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        border: 0;
+        height: 30px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .link:hover{
+        background-color: #f2f7fe;
+    }
+    
+    
+
+}
+@media only screen and (max-width: 1500px) and (min-width: 900px){
+    .container {
+        border: solid 1px brown;
+       height: 99.8vh;
+       width: 99.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .inner-container {
+        border: solid 1px rgb(191, 195, 191);
+        height: 800px;
+    width: 780px;
+        border-radius: 1%;
+        display: flex;
+        justify-content: center;
+            
+    
+    }
+    
+    .form {
+    
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fundoo {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Roboto';
+    }
+    
+    .Create {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: 400;
+    
+        font-family:sans-serif;
+    }
+    
+    .F-L-name {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        
+       
+    
+    }
+    .lastName{
+        margin-left: 10px;
+    }
+    input.input-box{
+        height: 5px
+    }
+    .Email {
+        padding: 0px;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0px;
+    
+    
+    }
+    .mat-email{
+        width: 100%;
+    }
+    
+    .span{
+        margin-left: 25px;
+        max-width: 218%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        color: #1a73e8;
+        
+        
+    }
+    .span:hover{
+        
+        background-color: #f2f7fe;
+       
+    }
+    
+    
+    .text {
+        font-size: 9px;
+        width: 110%;
+    }
+    
+    .password {
+        margin-left: 20px;
+        margin-top: 20px;
+        display: flex;
+        
+        align-items: center;
+    }
+    .confirmPassword{
+        margin-left: 10px;
+    }
+    
+    .checkbox {
+        margin-left: 20px;
+        margin-top: 10px;
+        
+    }
+    
+    input.show {
+    
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        
+    
+    }
+    label.Lableshow{
+        margin-left: 22px;
+        vertical-align: super;
+    
+    
+    }
+    .imgage{
+       
+        display: flex;
+        justify-items: center;
+        margin-top: 30%;
+        margin-left: 5%;
+        margin-right: 8%;
+        margin-bottom: 50%;
+    
+    
+    }
+    .spantag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:12px ;
+    
+        margin-top: -34px;
+        margin-left: -35px;
+        margin-bottom: 10px;
+    }
+    
+    .register{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        
+    
+    }
+    .Next-Butoon{
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        border-radius: 10%;
+        height: 35px;
+        width: 17%;
+    }
+    
+    .img-texts{
+        margin-left: 5%;
+        font-size: 13px;
+        text-align: center;
+    }
+    .link{
+        color: #1a73e8;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        border: 0;
+        height: 30px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .link:hover{
+        background-color: #f2f7fe;
+    }
+
+}

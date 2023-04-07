@@ -1,0 +1,592 @@
+.page {
+    border: 1px solid brown;
+    height: 99.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 1px solid rgb(191, 195, 191);
+    border-radius: 1%;
+    height: 80%;
+    width: 30%;
+}
+
+.fundoo {
+
+    font-size: x-large;
+    padding-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin {
+    font-size: x-large;
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text {
+    font-size: larger;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50%;
+    margin-left: 18%;
+}
+
+.email {
+    margin-top: 5%;
+}
+
+.tag {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.password {
+    padding-top: 1%;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+
+
+}
+
+.NEW {
+    margin-top: 10PX;
+    font-size: 15PX;
+}
+
+.Next-Butoon {
+    color: white;
+    border: 0;
+    background-color: #1a73e8;
+    font-weight: 650;
+    margin-left: 37%;
+    border-radius: 10%;
+    height: 38px;
+    width: 17%;
+}
+
+.text-new {
+    margin-top: -20px;
+    margin-left: 50PX;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 80%;
+    font-family: sans-serif;
+}
+
+.link {
+
+    color: #1a73e8;
+    border: 0;
+    background-color: white;
+    height: 30px;
+
+}
+
+.link:hover {
+    background-color: #f2f7fe;
+
+}
+
+.mat-box {
+    width: 170%;
+}
+
+@media only screen and (max-width: 450px) {
+    .page {
+        border: 0px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        border: 0px;
+        border-radius: 1%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .box {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-left: 5%;
+
+    }
+
+    .email {
+        margin-top: 5%;
+    }
+
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+
+
+    }
+
+    .NEW {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16PX;
+        margin-left: 0px;
+        font-size: 13PX;
+        margin-bottom: 14px;
+    }
+
+    .Next-Butoon {
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        margin-left: 45%;
+        border-radius: 10%;
+        height: 38px;
+        width: 17%;
+    }
+
+    .text-new {
+        margin-top: -20px;
+        margin-left: 15PX;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: start;
+        font-size: 82%;
+        font-family: sans-serif;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) and (min-width: 450px) {
+    .page {
+        border: 0px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        border: 0px;
+
+        height: 100%;
+        width: 99.8%;
+    }
+
+    .form {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-left: -5%;
+
+    }
+
+    .email {
+        margin-top: 5%;
+    }
+
+    .mat-box-pass {
+        width: 220%;
+        margin-left: -15%;
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+
+
+    }
+
+    .NEW {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16PX;
+        margin-left: 0px;
+        font-size: 15PX;
+        margin-bottom: 14px;
+    }
+
+    .Next-Butoon {
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        margin-left: 70%;
+        margin-right: -25%;
+        border-radius: 10%;
+        height: 38px;
+        width: 17%;
+    }
+
+    .text-new {
+        margin-top: -20px;
+        margin-left: 10PX;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: start;
+        font-size: 78%;
+        font-family: sans-serif;
+    }
+
+    .link {
+
+        color: #1a73e8;
+        border: 0;
+        background-color: white;
+        height: 35px;
+        font-size: medium;
+
+    }
+
+    .link-cre {
+        margin-left: -17%;
+
+    }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    .page {
+        border: 1px solid brown;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        border: 1px solid rgb(191, 195, 191);
+        height: 50%;
+        width: 73%
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0%;
+        margin-left: -18%;
+
+    }
+
+
+    .email {
+        margin-top: 5%;
+    }
+
+    .mat-box-pass {
+        width: 250%;
+        margin-left: -22%;
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+
+
+    }
+
+    .NEW {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16PX;
+        margin-left: 0px;
+        font-size: 15PX;
+        margin-bottom: 14px;
+    }
+
+    .Next-Butoon {
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        margin-left: 70%;
+        margin-right: -25%;
+        border-radius: 10%;
+        height: 38px;
+        width: 17%;
+    }
+
+    .text-new {
+        margin-top: -20px;
+        margin-left: 10PX;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: start;
+        font-size: 78%;
+        font-family: sans-serif;
+    }
+
+    .link {
+
+        color: #1a73e8;
+        border: 0;
+        background-color: white;
+        height: 35px;
+        font-size: medium;
+
+    }
+
+    .link-cre {
+        margin-left: -17%;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px) {
+    .container {
+        border: 1px solid rgb(191, 195, 191);
+        border-radius: 1%;
+        height: 680px;
+    width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .fundoo {
+        font-size: 35px;
+        padding-top: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin {
+        font-size: 25px;
+        padding-top: 11%;
+    }
+
+    .Text {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .mat-box {
+        width: 280%;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2%;
+        margin-right: 65%;
+    }
+    .text-new {
+        margin-top: -18px;
+        margin-left: -38PX;
+        margin-right: -9%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .link{
+        font-size: 17px;
+    }
+    .register {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8%;
+    }
+
+}
+@media only screen and (max-width: 2000px ) and (min-width: 1280px){
+    .page {
+        border: 1px solid brown;
+        height: 99.8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        border: 1px solid rgb(191, 195, 191);
+        border-radius: 1%;
+        height: 80%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fundoo {
+    
+        font-size: x-large;
+        padding-top: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signin {
+        font-size: x-large;
+        padding-top: 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Text {
+        font-size: larger;
+        padding-top: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50%;
+        margin-left: 18%;
+    
+    }
+    
+    .email {
+        margin-top: 5%;
+    }
+    
+    .tag {
+        margin-top: 0px;
+        display: flex;
+        justify-content: flex-start;
+    
+    }
+    
+    .password {
+        padding-top: 1%;
+    }
+    
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8%;
+    
+    
+    }
+    
+    .NEW {
+        margin-top: 10PX;
+        font-size: 15PX;
+    }
+    
+    .Next-Butoon {
+        color: white;
+        border: 0;
+        background-color: #1a73e8;
+        font-weight: 650;
+        margin-left: 37%;
+        border-radius: 10%;
+        height: 38px;
+        width: 17%;
+    }
+    
+    .text-new {
+        margin-top: -20px;
+        margin-left: 50PX;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        font-size: 80%;
+        font-family: sans-serif;
+    }
+    
+    .link {
+    
+        color: #1a73e8;
+        border: 0;
+        background-color: white;
+        height: 30px;
+    
+    }
+    
+    .link:hover {
+        background-color: #f2f7fe;
+    
+    }
+    
+    .mat-box {
+        width: 170%;
+    }
+}

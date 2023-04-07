@@ -1,0 +1,14 @@
+<div class="page"  [style.background]="colors" >
+    <div class="box"  >
+        <div class="pg-in-ti">
+            <input class="pg-in" matInput [(ngModel)]="title" type="text" placeholder="Titel">
+        </div>
+        <div class="pg-in-dis">
+            <!-- <input class="pg-in" matInput [(ngModel)]="description" type="textarea" placeholder="Description"> -->
+            <TExtarea  class="pg-in" matInput [(ngModel)]="description" rows="15" cols="50" placeholder="Description" >{{description}}</TExtarea>
+        </div>
+        <div class="ic-all"><app-icons [notesObj]="notes" ></app-icons>
+            <button class="Bu-cl" (click)="closeDialog()">Close</button>
+        </div>
+    </div>
+</div>

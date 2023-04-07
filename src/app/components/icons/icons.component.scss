@@ -1,0 +1,106 @@
+.lks{
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent;
+        gap: 4px;
+}
+
+.grid:hover{
+    background-color: #d5d6d7;
+    border-radius: 50px;
+
+    
+}
+.grid {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+
+    border: 0px;
+
+}
+
+
+.grid .piking {
+    visibility: hidden;
+    width: 85px;
+    height: 20px;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-left: -47px;
+    position: absolute;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.grid:hover .piking {
+    visibility: visible;
+    border-radius: 50px;
+    background-color: #9b9b9b;
+}
+.mat-mdc-menu-content {
+    
+    width: 5px;
+    height: 5px;
+   
+}
+
+
+.material-symbols-outlined {
+  color: rgb(57 55 55);
+ margin-top: 2px;
+  font-size: 20px;
+}
+.trash{
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.drop{
+    width: 10px;
+}
+
+::ng-deep.mat-mdc-menu-content{
+
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width:35%;
+    height: auto;
+    align-content: space-between;   
+    word-wrap: break-word;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+::ng-deep.mat-mdc-menu-panel.mat-mdc-menu-panel{
+    min-width:10px;
+    max-width: 400px;
+    width: 360px;
+    display: contents;
+    border-color: #fff;
+    
+}
+.border-color{
+    border: 1px solid black;
+    border-radius: 70%;
+    margin-left: 15px;
+    color: rgb(25, 190, 124);
+    width: 1%;
+    height: 1%;
+    
+
+}
+
+@media screen and (max-width: 450px){
+.mat-mdc-menu-content {
+    margin-left: 61%;
+
+}
+}

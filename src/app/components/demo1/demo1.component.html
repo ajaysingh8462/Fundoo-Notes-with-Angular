@@ -1,0 +1,13 @@
+<div class="page">
+    <div class="input-box">
+        <label for="">Enter your name</label>
+        <input class="input-text" type="text" placeholder="Fullname" [(ngModel)]="name">
+
+    </div>
+    <button (click)="submit() "  >Submit</button>
+    <div  *ngFor="let fname of fullNameArray" >
+        <p>Hello:  {{fname}}</p>
+    
+    </div>
+
+</div>

@@ -1,0 +1,19 @@
+<!-- <p>displaynotes works!</p> -->
+<div class="main-co">
+    <div class="co-pg-dt" *ngFor="let notes of child | filter : Search">
+        <div class="page" [style.background]="notes.color">
+            <div class="block ">
+                <div class="block block-new" (click)="openDialog(notes)">
+                    <div class="tx-ti-bl">
+                        <P>{{notes.title}}</P>
+                    </div>
+                    <div class="tx-ds-bl">
+                        <p >{{notes.description}}</p>
+                    </div>
+                </div>
+                <div class="ic-all"><app-icons [notesObj]="notes"
+                        (msgTrashToDisplay)="receiveMsgTrashToDisplay($event)"></app-icons></div>
+            </div>
+        </div>
+    </div>
+</div>
