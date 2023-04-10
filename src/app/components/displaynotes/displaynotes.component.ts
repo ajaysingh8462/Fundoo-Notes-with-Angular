@@ -30,9 +30,9 @@ export class DisplaynotesComponent implements OnInit {
 
   openDialog(notes: any): void {
     const dialogRef = this.dialog.open(UpdatenoteComponent, {
-      // width: '40%',
+      width: '40%',
       // heigth: 'auto',
-      // panelClass: 'updateDialog',
+      panelClass: 'updateDialog',
       data: notes
       
     });

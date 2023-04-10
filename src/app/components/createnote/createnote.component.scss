@@ -13,7 +13,8 @@
 }
 .in-ta-no{
     width: 100%;
-    height: 20px;
+height: 20px;
+
     border: 0px;
     outline: none;
     font-weight: bold;
@@ -173,7 +174,13 @@
     .Bu-cl{
         margin-left: 26px;
     }
+}
+@media screen and (max-width: 767px) and (min-width:450px)
+{
+    .small-co{
+        width: 75%;
+        height: 50%;
+        margin-left: 41%;
+    }
    
-  
-
 }

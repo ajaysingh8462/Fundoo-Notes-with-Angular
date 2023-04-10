@@ -5,10 +5,12 @@
             <mat-expansion-panel hideToggle>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <input class="in-ta-no" type="text" placeholder="Title" [(ngModel)]="title">
+                        <!-- <input class="in-ta-no" type="text" placeholder="Title" [(ngModel)]="title"> -->
+                        <textarea class="in-ta-no" type="text" placeholder="Title" [(ngModel)]="title" cols="30" rows="10"></textarea>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <input class="in-ta-dis" type="text" placeholder="Take a note..." [(ngModel)]="description">
+                <!-- <input class="in-ta-dis" type="text" placeholder="Take a note..." [(ngModel)]="description"> -->
+                <textarea class="in-ta-no" type="text" placeholder="description" [(ngModel)]="description" cols="30" rows="10"></textarea>
                 <div class="ic-bu">
                     <!-- <div class="ic-all">
                         <app-icons></app-icons>

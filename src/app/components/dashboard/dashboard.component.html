@@ -8,21 +8,28 @@
                 </mat-toolbar><br>
                 <mat-sidenav-container class="example-sidenav-container"
                     [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-                    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                    <mat-sidenav class="side-nave" style="position: fixed;
+                    transform: none;
+                    visibility: visible;
+                   
+                    bottom: 0px;
+                    " #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                         [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
                         <mat-nav-list >
                             <div  class="all-side-nav">
                                 <!-- *ngFor="let nav of fillerNav">{{nav}} -->
                                 <div class="ic-ig-sv">
                                     <div class="div-edit" style mat-list-item routerLink="/dashboard/notes">
-                                        <img  (click)="snav.toggle()" class="icon-sv" src="assets/note.svg" alt="">
+                                        <img  (click)="snav.toggle()" class="icon-sv" src="assets/note.svg" alt="" style="color: blue;">
                                         <span class="sp-tx">Notes</span>
                                     </div>
                                 </div>
                                 <div class="ic-ig-sv">
                                     <div class="div-edit" style="margin-left:15px;" mat-list-item
                                         routerLink="/dashboard/notes">
-                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/reminder.svg" alt="">
+                                        <span class="material-symbols-outlined">
+                                            notifications
+                                            </span>
                                         <span class="sp-tx">Reminder</span>
                                     </div>
                                 </div>
@@ -41,20 +48,26 @@
                                 <div class="ic-ig-sv">
                                     <div class="div-edit" style="margin-left:15px;" mat-list-item
                                         routerLink="/dashboard/notes">
-                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/edit-label.svg" alt="">
+                                        <span class="material-symbols-outlined">
+                                            create
+                                            </span>
                                         <span class="sp-tx">Edit lable</span>
                                     </div>
                                 </div>
                                 <div class="ic-ig-sv">
                                     <div class="div-edit" style mat-list-item routerLink="/dashboard/archive">
-                                        <img (click)="snav.toggle()" class="icon-sv" src="assets/archive.svg" alt="">
+                                        <span style="margin-left: 7px;" class="material-symbols-outlined">
+                                            archive
+                                            </span>
                                         <span class="sp-tx">Archive</span>
                                     </div>
                                 </div>
                                 <div class="ic-ig-sv">
                                     <div class="div-edit" style="margin-left:-4px;" mat-list-item
                                         routerLink="/dashboard/trash">
-                                        <img (click)="snav.toggle()" style="MARGIN-LEFT: 10PX;" class="icon-sv" src="assets/trash.svg" alt="">
+                                        <span style="margin-left: 6px;" class="material-symbols-outlined">
+                                            delete
+                                            </span>
                                         <span class="sp-tx">Trash</span>
                                     </div>
                                 </div>
@@ -85,7 +98,10 @@
             </div>
             <div>
                 <BUtton class="settings picker">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings"></mat-icon>
+                    
+                    <span class="material-symbols-outlined">
+                        settings
+                        </span>
                     <span class="piking ">Settings</span>
                 </BUtton>
             </div>

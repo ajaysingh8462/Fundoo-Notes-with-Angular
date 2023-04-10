@@ -50,7 +50,7 @@
 
 .co-pg-dt {
     width: 240px;
-    height: auto
+    height: auto;
 }
 
 .tx-ti-bl {
@@ -119,5 +119,35 @@
     margin-left: 0%;
 }
 }
+@media screen and (max-width: 767px) and (min-width: 450px)
+{
+    .co-pg-dt{
+        width: 100%;
+        height: auto;
+    }
+    .block{
+        width: 370Px;
+    }
+    .ic-all {
+
+        justify-content: flex-start;
+   
+    }
+    .main-co{
+        margin-top: 50px;
+        margin-left: 190px;
+        width: 85%;
+ 
+    }
+    .page{
+        border: 1px solid rgb(224, 223, 221);
+        border-radius: 10px;
+        display: flex;
+        width: 111%;
+    }
+
+}
+
+
 
 

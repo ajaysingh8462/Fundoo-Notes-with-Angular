@@ -87,3 +87,19 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 767px) and (min-width: 450px){
+    .page{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 767px){
+    .page{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+}

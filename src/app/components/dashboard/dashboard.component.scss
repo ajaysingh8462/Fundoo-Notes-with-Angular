@@ -112,6 +112,11 @@ h1.example-app-name {
 .manu {
     margin-left: 1;
 }
+.material-symbols-outlined{
+    color: #7c7b7b;
+    height: 24px;
+    width: 24px;
+}
 
 .image {
     width: 50px;
@@ -295,7 +300,9 @@ h1.example-app-name {
     margin-top: 24px;
     margin-left: 20px;
 }
-
+.side-nave{
+    margin-top: 5%;
+}
 
 .grid .piking {
     visibility: hidden;
@@ -386,12 +393,14 @@ h1.example-app-name {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    MARGIN: 13PX;
+    margin-top: 10px;
+    // MARGIN: 2px;
+    height: 50px;
 
 }
 
 .div-edit:hover {
-    background-color: #ebe8e8;
+    background-color: #feefc3;
     border-radius: 30px;
 }
 
@@ -551,14 +560,17 @@ h1.example-app-name {
     .container-note{
         MARGIN-LEFT: 6%;
     }
+    .side-nave{
+        margin-top: 5%;
+    }
 
 
 }
-@media screen and (max-width: 768px) and (min-width: 450px){
+@media screen and (max-width: 767px) and (min-width: 450px){
     
     .page {
         height: auto;
-        width: 43%;
+        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -570,21 +582,25 @@ h1.example-app-name {
     .manu{
         display: flex;
         justify-content: center;
-        margin-left: 40%;
+        margin-left: 23%;
+    }
+    .person{
+        margin-left: 6%;
     }
     .container {
         width: 17%;
-        margin-left: 2%;
+        margin-left: 10%;
        background-color: #ffffff;
   
     }
+   
 
     .header {
-        width: 100%;
+        width: 108%;
     }
     .refresh {
         
-        margin-left: 92PX;
+        margin-left: 28PX;
 
     }
 
@@ -644,6 +660,152 @@ h1.example-app-name {
         flex: 1 0 auto;
         
 
+    }
+    .boder {
+        display: none;
+    }
+    .mat-sidenav-fixed{
+        position: fixed;
+        transform: none;
+        visibility: visible;
+        top: 78px;
+        bottom: 0px;
+        width: 43%;
+    }
+    .mat-sidenav-fixed{
+        position: fixed;
+        transform: none;
+        visibility: visible;
+        top: 78px;
+        bottom: 0px;
+        width: 43%;
+    }
+    .side-nave{
+        margin-top: 5%;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px){
+    .page {
+        height: auto;
+        width: 94%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boder:hover {
+        display: visible;
+    }
+    .manu{
+        display: flex;
+        justify-content: center;
+        margin-left: 6%;
+    }
+    .person{
+        margin-left: 6%;
+    }
+    .container {
+        width: 9%;
+        margin-left: 27%;
+        background-color: #ffffff;
+    }
+   
+
+    .header {
+        width: 106%;
+    }
+    .refresh {
+        
+        margin-left: 0PX;
+
+    }
+    .side-nave{
+        margin-top: 10%;
+    }
+
+    .mdc-list {
+
+        width: 198px;
+    }
+
+    .example-container {
+        display: flex;
+        width: 30px;
+        // height: 30px;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 2px;
+
+
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .example-is-mobile .example-toolbar {
+        position: fixed;
+        /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+        z-index: 2;
+        display: flex;
+        box-sizing: border-box;
+        padding: 0px 8px;
+        width: 07%;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+
+    }
+
+    h1.example-app-name {
+        margin-left: 8px;
+
+    }
+
+    .example-sidenav-container {
+        /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+           causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+        flex: 1;
+        width: 200px;
+        background-color: #fff;
+        background: transparent;
+
+    }
+
+    .example-is-mobile .example-sidenav-container {
+        /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+           `<body>` to be our scrolling element for mobile layouts. */
+        flex: 1 0 auto;
+        
+
+    }
+    .boder {
+        display: none;
+    }
+    .mat-sidenav-fixed{
+        position: fixed;
+        transform: none;
+        visibility: visible;
+        top: 78px;
+        bottom: 0px;
+        width: 43%;
+    }
+    .mat-sidenav-fixed{
+        position: fixed;
+        transform: none;
+        visibility: visible;
+        top: 78px;
+        bottom: 0px;
+        width: 43%;
+    }
+    .account {
+        width: 7%;
     }
 
 
