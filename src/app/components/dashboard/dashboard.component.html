@@ -11,7 +11,7 @@
                     <mat-sidenav class="side-nave" style="position: fixed;
                     transform: none;
                     visibility: visible;
-                   
+                    /* background: transparent; */
                     bottom: 0px;
                     " #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
                         [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
@@ -123,6 +123,22 @@
             
 
         </header>
+        <!-- <div>
+            <img  (click)="snav.toggle()" class="icon-sv" src="assets/note.svg" alt="" style="color: blue;"><br>
+            <span class="material-symbols-outlined">
+                notifications
+                </span><br>
+                <span class="material-symbols-outlined">
+                    create
+                    </span><br>
+                    <span style="margin-left: 7px;" class="material-symbols-outlined">
+                        archive
+                        </span><br>
+                        <span style="margin-left: 7px;" class="material-symbols-outlined">
+                            delete
+                            </span><br>
+
+        </div> -->
         <div class="container-note"><router-outlet ></router-outlet></div>
     </div>
 </div>

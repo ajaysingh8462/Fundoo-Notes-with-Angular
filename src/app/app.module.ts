@@ -37,6 +37,10 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { SearchPipe } from './pipe/search.pipe';
 import { EditLableComponent } from './components/createnote/edit-lable/edit-lable.component';
 import { Demo1Component } from './components/demo1/demo1.component';
+import { NgxMasonryModule } from 'ngx-masonry';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
 
 
 @NgModule({
@@ -81,7 +85,9 @@ import { Demo1Component } from './components/demo1/demo1.component';
     MatMenuModule,
     MatDialogModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgxMasonryModule,
+    MatSlideToggleModule
     
   ],
   providers: [

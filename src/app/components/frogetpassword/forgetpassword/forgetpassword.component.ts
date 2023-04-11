@@ -26,7 +26,6 @@ export class ForgetpasswordComponent {
   onSubmit() {
     this.submitted = true;
 
-    // stop here if form is invalid
     if (this.forgetpasswordform.valid) {
       let payload={
       emailId: this.forgetpasswordform.value.email,
